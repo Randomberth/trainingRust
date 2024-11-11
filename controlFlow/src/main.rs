@@ -17,11 +17,21 @@ fn main() {
 
     let number: i32 = 33;
 
+    let number_boy: i32 = if value < 40 {
+        (value * 2).try_into().unwrap()
+    } else {
+        (value * 4).try_into().unwrap()
+    };
+
     if number > value.try_into().unwrap() {
         println!("");
-        println!("concition was smaller than {}", number);
+        println!("condition was smaller than {}", number);
+        println!("");
+        println!("number boy : {}", number_boy);
     } else {
         println!("");
-        println!("concition was bigger than {}", number);
+        println!("condition was bigger than {}", number);
+        println!("");
+        println!("number boy : {}", number_boy);
     }
 }
