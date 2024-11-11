@@ -1,6 +1,8 @@
 use std::io;
+mod loop_main;
 
 fn main() {
+    loop_main::greet("module");
     println!("");
     println!("Please enter a number");
 
