@@ -1,1 +1,1 @@
-/home/randomberth/RustTest/trainingRust/controlFlow/target/debug/controlFlow: /home/randomberth/RustTest/trainingRust/controlFlow/src/loop_main.rs /home/randomberth/RustTest/trainingRust/controlFlow/src/main.rs
+/home/aliberth/training_rust/controlFlow/target/debug/controlFlow: /home/aliberth/training_rust/controlFlow/src/loop_main.rs /home/aliberth/training_rust/controlFlow/src/main.rs

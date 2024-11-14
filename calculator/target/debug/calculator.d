@@ -1,1 +1,1 @@
-/home/randomberth/RustTest/trainingRust/calculator/target/debug/calculator: /home/randomberth/RustTest/trainingRust/calculator/src/main.rs
+/home/aliberth/training_rust/calculator/target/debug/calculator: /home/aliberth/training_rust/calculator/src/main.rs
