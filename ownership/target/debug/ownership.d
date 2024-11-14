@@ -1,1 +1,1 @@
-/home/aliberth/training_rust/ownership/target/debug/ownership: /home/aliberth/training_rust/ownership/src/main.rs
+/home/randomberth/RustTest/trainingRust/ownership/target/debug/ownership: /home/randomberth/RustTest/trainingRust/ownership/src/main.rs
