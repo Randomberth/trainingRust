@@ -1,1 +1,1 @@
-/home/randomberth/RustTest/trainingRust/cursor/target/debug/cursor: /home/randomberth/RustTest/trainingRust/cursor/src/main.rs
+/home/aliberth/training_rust/cursor/target/debug/cursor: /home/aliberth/training_rust/cursor/src/main.rs
