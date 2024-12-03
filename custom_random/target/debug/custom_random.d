@@ -1,0 +1,1 @@
+/home/randomberth/RustTest/trainingRust/custom_random/target/debug/custom_random: /home/randomberth/RustTest/trainingRust/custom_random/src/custom_type.rs /home/randomberth/RustTest/trainingRust/custom_random/src/main.rs
