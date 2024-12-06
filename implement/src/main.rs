@@ -12,15 +12,15 @@ trait Human {
 
 impl Human for Person {
     fn is_human(&self) -> bool {
-        true
+        false
     }
 
     fn print_name(&self) {
-        println!("  Name:  {}", self.name)
+        println!("  Saludo:  {}", self.name)
     }
 
     fn print_profession(&self) {
-        println!("  Profession:  {}", self.profession)
+        println!("  a quien:  {}", self.profession)
     }
 
     fn new(name: String, profession: String) -> Self {
@@ -29,12 +29,12 @@ impl Human for Person {
 }
 
 fn main() {
-    let person = Person::new(String::from("Randomberth"), String::from("AliAli"));
+    let person = Person::new(String::from("Hola"), String::from("Mundo"));
 
     println!("");
     person.print_name();
     println!("");
     person.print_profession();
     println!("");
-    println!("Is person human? {}", person.is_human());
+    println!("Do you learn? {}", person.is_human());
 }
