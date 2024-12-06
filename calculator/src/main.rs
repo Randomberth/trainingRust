@@ -1,7 +1,4 @@
 use std::io;
-//use std::io::{self, stdout, Write};
-//use termion::cursor;
-//use termion::raw::IntoRawMode;
 
 fn main() {
     println!("");
@@ -33,15 +30,9 @@ fn main() {
         }
     };
 
-    //    let mut stdout = stdout().into_raw_mode().unwrap();
-
     println!("");
     println!("Ingrese primer valor :");
 
-    /*    write!(stdout, "Ingrese primer valor : ").unwrap();
-       stdout.flush().unwrap();
-       write!(stdout, "{}", cursor::Goto(18, 1)).unwrap();
-    */
     let mut val1 = String::new();
     std::io::stdin()
         .read_line(&mut val1)
