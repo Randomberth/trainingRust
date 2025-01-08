@@ -4,6 +4,7 @@ use std::io;
 
 mod operations;
 fn main() {
+    println!("");
     println!("1.- Suma");
     println!("2.- Resta");
     println!("3.- Multiplicación");
@@ -24,9 +25,25 @@ fn main() {
         val >= 1 && val <= 5
     }
 
-    let numbers: Numbers = operations::Numbers::new(15.0, 5.0);
-
     if option_oper(input_number) {
+        println!("Ingrese el primer número");
+        println!("");
+        let mut x = String::new();
+        io::stdin().read_line(&mut x).expect("Error en la entrada");
+
+        println!("Ingrese el segundo número");
+        println!("");
+        let mut y = String::new();
+        io::stdin().read_line(&mut y).expect("Error en la entrada");
+
+        let x1: f64 = x.trim().parse().expect("error");
+        let y1: f64 = y.trim().parse().expect("error");
+
+        //let x1: f64 = x.trim().parse().expect("error");
+
+        //let y1: f64 = y.trim().parse().expect("error");
+
+        let numbers: Numbers = operations::Numbers::new(x1, y1);
         match input_number {
             1 => {
                 println!("");
