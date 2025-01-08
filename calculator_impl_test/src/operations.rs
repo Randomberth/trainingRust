@@ -66,7 +66,7 @@ impl Calculator for Numbers {
             "Resultado de {:?} % {:?} : {:?}",
             format!("{:.2}", self.number1),
             format!("{:.2}", self.number2),
-            format!("{:.2}", self.number1 - self.number2)
+            format!("{:.2}", self.number1 % self.number2)
         );
         println!("");
         self.number1 % self.number2

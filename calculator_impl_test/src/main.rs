@@ -4,8 +4,6 @@ use std::io;
 
 mod operations;
 fn main() {
-    let numbers: Numbers = operations::Numbers::new(15.0, 5.0);
-
     println!("1.- Suma");
     println!("2.- Resta");
     println!("3.- Multiplicación");
@@ -25,6 +23,8 @@ fn main() {
     fn option_oper(val: i32) -> bool {
         val >= 1 && val <= 5
     }
+
+    let numbers: Numbers = operations::Numbers::new(15.0, 5.0);
 
     if option_oper(input_number) {
         match input_number {
