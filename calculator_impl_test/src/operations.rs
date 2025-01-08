@@ -15,21 +15,60 @@ pub trait Calculator {
 
 impl Calculator for Numbers {
     fn suma(&self) -> f64 {
+        println!(
+            "Resultado de {:?} + {:?} : {:?}",
+            format!("{:.2}", self.number1),
+            format!("{:.2}", self.number2),
+            format!("{:.2}", self.number1 + self.number2)
+        );
+        println!("");
         self.number1 + self.number2
     }
 
     fn resta(&self) -> f64 {
+        println!(
+            "Resultado de {:?} - {:?} : {:?}",
+            format!("{:.2}", self.number1),
+            format!("{:.2}", self.number2),
+            format!("{:.2}", self.number1 - self.number2)
+        );
+        println!("");
         self.number1 - self.number2
     }
 
     fn multiplo(&self) -> f64 {
+        println!(
+            "Resultado de {:?} * {:?} : {:?}",
+            format!("{:.2}", self.number1),
+            format!("{:.2}", self.number2),
+            format!("{:.2}", self.number1 * self.number2)
+        );
+        println!("");
         self.number1 * self.number2
     }
     fn division(&self) -> f64 {
+        println!(
+            "Resultado de {:?} / {:?} : {:?}",
+            format!("{:.2}", self.number1),
+            format!("{:.2}", self.number2),
+            format!("{:.2}", self.number1 / self.number2)
+        );
+        println!("");
+        println!(
+            "dejando un resto de : {:?}",
+            format!("{:?}", self.number1 % self.number2)
+        );
         self.number1 / self.number2
     }
 
     fn modulo(&self) -> f64 {
+        println!(
+            "Resultado de {:?} % {:?} : {:?}",
+            format!("{:.2}", self.number1),
+            format!("{:.2}", self.number2),
+            format!("{:.2}", self.number1 - self.number2)
+        );
+        println!("");
         self.number1 % self.number2
     }
 
