@@ -1,1 +1,1 @@
-/home/aliberth/rust_test/pinhon/target/debug/pinhon: /home/aliberth/rust_test/pinhon/src/main.rs
+/home/randomberth/RustTest/trainingNewRust/pinhon/target/debug/pinhon: /home/randomberth/RustTest/trainingNewRust/pinhon/src/main.rs /home/randomberth/RustTest/trainingNewRust/pinhon/src/operations.rs

@@ -1,25 +1,27 @@
-struct Dientes {
-    plate: Vec<String>,
-    pinhon: Vec<String>,
+pub struct Relation {
+    pub(crate) plate: Vec<String>,
+    pub(crate) pinhon: Vec<String>,
 }
 
-pub trait Relation {
-    fn new(plate: String, pinhon: String) -> Self;
+pub trait Calculo {
+    fn new_pinhon(&mut self, pinhon_arg: String);
+    fn new_plate(&mut self, plate_arg: String);
     fn show_relation(&self);
 }
 
-impl Relation for Dientes {
-    fn new(plate_arg: String, pinhon_arg: String) -> Self {
-        let mut new_relation = Dientes {
-            plate: Vec::new(),
-            pinhon: Vec::new(),
-        };
-        new_relation.plate.push(plate_arg);
-        new_relation.pinhon.push(pinhon_arg);
-        new_relation
+impl Calculo for Relation {
+    fn new_pinhon(&mut self, pinhon_arg: String) {
+        self.pinhon.push(pinhon_arg);
+    }
+
+    fn new_plate(&mut self, plate_arg: String) {
+        self.plate.push(plate_arg);
     }
 
     fn show_relation(&self) {
-        println!("{:?} : {:?}", self.plate, self.pinhon)
+        println!(
+            "relación plato-pinhon : {:?} : {:?}",
+            self.plate, self.pinhon
+        )
     }
 }
