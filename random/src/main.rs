@@ -23,7 +23,7 @@ fn main() {
 
         // randome number with a range
 
-        println!("Generate a random number with range:");
+        println!("Generate a random number with 0..100 range:");
         println!("");
         println!("Integer: {}", rng.gen_range(0..100));
         println!("Float: {}", rng.gen_range(0.0..100.0));
